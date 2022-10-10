@@ -1,0 +1,47 @@
+,Wonder,City,Country,Address,Latitude,Longitude,Visited,Destroyed
+0,Alhambra, Granada,Spain,"Alhambra,  Granada, Spain",37.176059949999996,-3.5881102773279347,No,No
+1,Angkor Wat,Not defined,Cambodia,"Angkor Wat, Cambodia",13.41249325,103.86658696357813,No,No
+2,Big Ben, London,England,"Big Ben,  London, England",51.5006895,-0.1245838,No,No
+3,Borobudur, Central Java,Indonesia,"Borobudur,  Central Java, Indonesia",-7.6079583,110.20382445260663,No,No
+4,Brandenburg Gate, Berlin,Germany,"Brandenburg Gate,  Berlin, Germany",52.51628045,13.377701882994323,No,No
+5,Broadway, New York,USA,"Broadway,  New York, USA",40.7693174,-73.9820052,No,No
+6,Chichen Itza, Yucatán,Mexico,"Chichen Itza,  Yucatán, Mexico",20.68285195,-88.5687196355205,No,No
+7,CN Tower, Toronto,Canada,"CN Tower,  Toronto, Canada",43.6425637,-79.38708718320467,No,No
+8,Colossus, Rhodes,Greece,"Colossus,  Rhodes, Greece",36.3397076,28.2003164,No,Yes
+9,Cristo Redentor, Rio de Janeiro,Brazil,"Cristo Redentor,  Rio de Janeiro, Brazil",-22.9519173,-43.2104585,No,No
+10,Eiffel Tower, Paris,France,"Eiffel Tower,  Paris, France",48.858260200000004,2.2944990543196795,No,No
+11,Forbidden Palace, Beijing,China,"Forbidden Palace,  Beijing, China",39.9132879,116.3973711,No,No
+12,Globe Theatre, London,England,"Globe Theatre,  London, England",51.5081048,-0.09719676722482405,No,No
+13,Great Library, Alexandria,Egypt,"Great Library,  Alexandria, Egypt",31.208,29.909,No,Yes
+14,Great Lighthouse, Alexandria,Egypt,"Great Lighthouse,  Alexandria, Egypt",31.125,29.531,No,No
+15,Great Mosque of Djenne, Djenné,Mali,"Great Mosque of Djenne,  Djenné, Mali",13.90510915,-4.555330768076923,No,No
+16,Great Wall,Not defined,China,"Great Wall, China",40.1319215,119.7486767,No,No
+17,Hagia Sophia, Istanbul,Turkey,"Hagia Sophia,  Istanbul, Turkey",41.008508649999996,28.980009932000005,No,No
+18,Hanging Gardens,Not defined,Iraq,"Hanging Gardens, Iraq",36.3591417,43.1540394,No,No
+19,Hermitage, Saint Petersburg,Russia,"Hermitage,  Saint Petersburg, Russia",59.9412076,30.315486515853937,No,No
+20,Himeji Castle, Himeji,Japan,"Himeji Castle,  Himeji, Japan",34.839331349999995,134.69402000000002,No,No
+21,Kremlin, Moscow,Russia,"Kremlin,  Moscow, Russia",55.7438837,37.627564,No,No
+22,Leaning Tower of Pisa, Pisa,Italy,"Leaning Tower of Pisa,  Pisa, Italy",43.7230159,10.39663219748954,No,No
+23,Louvre, Paris,France,"Louvre,  Paris, France",48.8611473,2.33802768704666,No,No
+24,Machu Picchu, Cusco,Peru,"Machu Picchu,  Cusco, Peru",-13.164421950000001,-72.54508510173372,No,No
+25,Mausoleum of Halicarnassus, Bodrum,Turkey,"Mausoleum of Halicarnassus,  Bodrum, Turkey",37.022,27.253,No,Yes
+26,Neuschwanstein, Füssen,Germany,"Neuschwanstein,  Füssen, Germany",47.5863194,10.7088022,No,No
+27,Notre Dame, Paris,France,"Notre Dame,  Paris, France",48.85293705,2.3500501225000026,No,No
+28,Oracle, Delphi,Greece,"Oracle,  Delphi, Greece",38.286,22.301,No,No
+29,Oxford University, Oxford,England,"Oxford University,  Oxford, England",51.7583164,-1.2651448728790433,No,No
+30,Parthenon, Athens,Greece,"Parthenon,  Athens, Greece",37.97150335,23.72661765,No,No
+31,Pentagon, Washington,USA,"Pentagon,  Washington, USA",38.8731678,-77.048866,No,No
+32,Petra,Not defined,Jordan,"Petra, Jordan",30.3258363,35.4745669,No,No
+33,Porcelain Tower, Nanjing,China,"Porcelain Tower,  Nanjing, China",32.075,118.725,No,Yes
+34,Prora, Rügen,Germany,"Prora,  Rügen, Germany",54.437207400000005,13.576686601852956,No,No
+35,Pyramids, Giza,Egypt,"Pyramids,  Giza, Egypt",29.9748293,31.1378326,No,No
+36,Red Fort, Dehli,India,"Red Fort,  Dehli, India",28.656,77.243,No,No
+37,Sistine Chapel,Not defined,Vatican,"Sistine Chapel, Vatican",41.9029338,12.45440425,No,No
+38,Statue of Liberty, New York,USA,"Statue of Liberty,  New York, USA",40.689253199999996,-74.04454817144321,No,No
+39,Statue of Zeus, Olympia,Greece,"Statue of Zeus,  Olympia, Greece",37.6379513,21.6302531,No,Yes
+40,Stonehenge,Not defined,England,"Stonehenge, England",51.178829300000004,-1.8261830004623518,No,No
+41,Sydney Opera House, Sydney,Australia,"Sydney Opera House,  Sydney, Australia",-33.85719805,151.21512338473752,No,No
+42,Taj Mahal, Agra,India,"Taj Mahal,  Agra, India",27.1750123,78.04209683661315,No,No
+43,Temple of Artemis,Selcuk,Turkey,"Temple of Artemis, Selcuk, Turkey",37.94973345,27.363605844841715,No,Yes
+44,Terracotta Army, Xi’an,China,"Terracotta Army,  Xi’an, China",34.2776155,108.9620085,No,No
+45,Uffizi, Florence,Italy,"Uffizi,  Florence, Italy",43.76831285,11.255800881201246,No,No
