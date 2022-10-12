@@ -4,24 +4,27 @@ import folium
 from streamlit_folium import st_folium
 import altair as alt
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title = 'Wonders from Civ5')
+# Set all 4 containers in correct order
 header = st.container()
 descrip = st.container()
 map = st.container()
 change = st.container()
 
+# Perform @cache function to avoid reading data each time
 @st.cache(allow_output_mutation=True)
 def upload_wonders():
     wonders = pd.read_csv('data/Wonders.csv')
     return wonders
 curr_wonders = upload_wonders()
 
+# First container - introduction to the page
 with header:
-    st.title('Welcome to my project of Civ5 Wonders on the world map')
-    st.text("""The main goal of the project is to allow everyone to track which Wonders of the favourite game they visited.
-Everything is shown using Pandas df and Folium maps. 
-You can explore the map, check some information about the places and update it with your personal.""")
+    st.title('Map of World Wonders from Civilazation 5 game')
+    st.text("""To get the idea of where data came from, please check the notebook with tha same name on Github.
+HTML parsing -> Data transformation and cleaning -> Testing""")
 
+# Second container - data description
 with descrip:
     st.header('Down below is the dataset used for the project ')
     st.text("""The dataset was created via Pandas and NumPy libriaries.
@@ -29,22 +32,25 @@ You can check the process of making this dataset using GitHub page of the projec
 Basically, the information was parsed from web-sites, transformed and then saved as .csv file (simple ETL).
 The cahnges you make on the page will be reflected in the 'Visited' column.""")
     st.write(curr_wonders.head())
-    show_col, text_col = st.columns(2)
+    show_col, text_col = st.columns(2) # Set 2 columns for better visualization
     with show_col:
         "Wonders by Countries"
+        # Bar chart initiation
         bar_chart = alt.Chart(curr_wonders).mark_bar().encode(
-        x=alt.X('count(Country):N'),
-        y = alt.Y('Country', sort='-x'),
-        opacity=alt.value(0.2),
-        color=alt.value('blue')
-    )
+            x=alt.X('count(Country):N'),
+            y = alt.Y('Country', sort='-x'),
+            opacity=alt.value(0.2),
+            color=alt.value('blue')
+        )
         st.altair_chart(bar_chart, use_container_width=True)
+    # Bar chart description
     with text_col:
         st.text("""On the graph to the left there are all the countries that      
 you need to visit in order to achive 'Mission complete' badge 
 for making the whole map green.
 You can start from those which have more Wonders at a time.""")
 
+# Third container - data changes to DF
 with change:
     st.header('The best section - Changes')
     st.text("""Here you are making your own story!
@@ -52,26 +58,32 @@ Please, choose Wonders that you have already visited in the drop-down menu. Thes
 After you are done, click the button that will appear below and see the magic!
     """)
     sel_col, reset_col = st.columns(2)
+    # Multiselect initiation
     add_visit = sel_col.multiselect(
-    'Which Wonders did you visit?',
-    curr_wonders['Wonder'],
-    key="multiselect"
+        'Which Wonders did you visit?',
+        curr_wonders['Wonder'],
+        key="multiselect"
     )
+
     def to_add(visited):
         for n in range(len(visited)):
             curr_wonders.loc[curr_wonders['Wonder'] == visited[n], 'Visited'] = 'Yes'
         return
+    
+    # Button initiation
     with sel_col:
         if add_visit:
             nest_button = st.button('Press to add them on the map')
             if nest_button:
                 to_add(add_visit)
+    
+    # Column for reset and download functions
     with reset_col: 
         st.text("""Now, when you are the explorer, you can download the file!
-You can use this file further to show others where you have been to.
-Just click 'Upload' on the left side and browse for your file. 
-Carefully check the restrictions!
-    """)
+You can use this file further to show others where you have been to."""
+#Just click 'Upload' on the left side and browse for your file. 
+#Carefully check the restrictions!
+    )
         @st.cache
         def convert_df(df):                     # IMPORTANT: Cache the conversion to prevent computation on every rerun
             return df.to_csv().encode('utf-8')
@@ -90,7 +102,7 @@ simply click 'Reset' and enjoy the map again!
             curr_wonders['Visited'] = 'No'
 
 
-
+# Forth container - Map itself
 with map:
     st.header('Please, enjoy the map')
     st.text("""You can explore this map on your own. Each marker has some information regarding the Wonder.""")

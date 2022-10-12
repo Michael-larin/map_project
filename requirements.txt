@@ -1,5 +1,6 @@
 altair==4.2.0
 folium==0.13.0
-pandas==1.5.0
+geopandas==0.11.1
+pandas==1.4.3
 streamlit==1.13.0
 streamlit_folium==0.6.15
